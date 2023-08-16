@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "neilbrayfield.php-docblocker",
+        "vue.volar",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "valeryanm.vscode-phpsab",
+        "ryanluker.vscode-coverage-gutters"
+    ]
+}

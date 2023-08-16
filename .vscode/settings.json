@@ -1,0 +1,49 @@
+{
+    // Basic editor settings
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    // Vue format settings
+    "[vue]": {
+        // For editors with multiple default vue formatters installed
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": false,
+            "source.fixAll.eslint": true
+        }
+    },
+
+    // Javascript settings
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vitest.commandLine": "npx vitest -c ./vite.config.ts",
+    // PHP formatter settings
+    "php.validate.enable": true,
+    "php.suggest.basic": false,
+    "files.exclude": {
+        // "**/public/": true
+    },
+    "[php]": {
+        "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+    },
+    "phpsab.fixerEnable": true,
+    "phpsab.snifferEnable": true,
+    "phpsab.snifferMode": "onType",
+    // ESLint settings
+    "eslint.run": "onType",
+    "eslint.workingDirectories": ["./resources/js"],
+    "eslint.nodePath": "./node_modules",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    // Git settings
+    "git.branchProtection": ["master", "development"],
+    "git.branchWhitespaceChar": "-",
+    "git.requireGitUserConfig": true
+}

@@ -4,7 +4,6 @@ import {computed, ref} from 'vue';
 
 import {deleteRequest, getRequest, postRequest, putRequest} from '../http';
 
-
 /**
  * Creates a store module for the given module name.
  */

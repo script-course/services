@@ -76,12 +76,6 @@ const beforeMiddleware: NavigationGuard = ({meta, fullPath}) => {
         return true;
     }
 
-    if (!isAdmin.value && meta.isAdmin) {
-        logout();
-
-        return true;
-    }
-
     if (isLoggedIn.value && !meta.canSeeWhenLoggedIn) {
         goToDefaultLoggedInPage();
 

@@ -2,6 +2,8 @@ import vue from '@vitejs/plugin-vue';
 import laravel from 'laravel-vite-plugin';
 import {defineConfig} from 'vite';
 
+import {resolve} from './vite/resolve.config';
+
 export default defineConfig({
     plugins: [
         laravel({
@@ -11,4 +13,5 @@ export default defineConfig({
         vue(),
     ],
     build: {target: 'esnext'},
+    resolve,
 });

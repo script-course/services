@@ -2,7 +2,9 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "lint": "eslint \"resources/js/**/*.{js,vue,ts}\" --fix --cache",
+        "vue-tsc": "vue-tsc --noEmit -p tsconfig.volar.json"
     },
     "devDependencies": {
         "@types/node": "^20.5.0",
